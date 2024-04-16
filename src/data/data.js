@@ -42,7 +42,7 @@ export const data = [
         img: project1,
         title: "Redux Ecommerce",
         desc: "Developed dynamic e-commerce website using React JS, Tailwind Css , Redux Toolkit, and a Dummy JSON API. It includes search functionality, as well as the ability to add and remove items from a shopping cart.",
-        link: "https:/dhana-redux-ecommerce.netlify.app",
+        link: "https://dhana-redux-ecommerce.netlify.app/",
         git: "https://github.com/DhanaLakshmi-9998/Redux-E-Commerce",
       },
      
