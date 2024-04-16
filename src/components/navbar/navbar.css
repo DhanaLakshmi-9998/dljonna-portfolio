@@ -1,0 +1,122 @@
+/* .n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -4rem;
+
+} */
+/* .n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+} */
+/* .n-name{
+    font-size: 1.3rem;
+    font-weight: bold;
+} */
+/* .n-right{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 400
+} */
+/* .n-list{
+    flex: 10;
+    
+} */
+/* .n-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right:2rem;
+    list-style-type: none;
+}
+.n-list ul li:hover{
+    cursor: pointer;
+    color: var(--orange);
+} */
+/* .n-button{
+    flex: 2;
+    width:6rem;
+} */
+.app_smallscreen{
+    display: none;   
+    position: relative;
+    margin-top: 0.2rem;
+}
+.menu-icon{
+    color:var(--orange);
+    font-size: 35px;
+    font-weight:bold;
+    cursor: pointer;
+   
+    
+}
+.app__navbar__smallscreen__overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #383d3e;
+    transition: 0.5s ease;
+    flex-direction: column;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.app__navbar__smallscreen__overlay .overlay__close{
+    font-size: 27px;
+    color: var(--orange);
+    
+    cursor:pointer;
+    position:absolute ;
+    top: 20px;
+    right: 20px;
+}
+
+.app_smallscreen_links li{
+    margin: 2rem;
+    cursor: pointer;    
+    font-size: 1.1rem;
+    text-align: center;
+    
+    
+}
+.app_smallscreen_links li{
+    text-decoration: none;
+    color: var(--orange);
+}
+.app_smallscreen_links li:hover{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+@media screen and (max-width:968px) {
+    .n-list{
+      display: none;
+    }
+    .button{
+      display: none;
+    }
+    .app_smallscreen{
+        
+        display:flex;
+        cursor: pointer;
+        
+    }
+  }
+    
+
+@media screen and (max-width:468px) {
+ 
+  .app_smallscreen_links li{
+    font-size: 25px;
+    padding: 1rem;
+  }
+}
+  
