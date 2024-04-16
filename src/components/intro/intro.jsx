@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useContext} from "react";
+import ThemeContext from "../../context";
 import mine from '../../assets/img/banner1.jpg'
 import resumePDF from '../../assets/resume.pdf'
+
 import {
   AiFillTwitterCircle,
   AiFillGithub,
@@ -12,6 +14,8 @@ import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
 
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
 
     <div id="Home">
@@ -30,7 +34,7 @@ const Intro = () => {
           
         </div>
       </div>
-      <div className=" right mt-4 max-[768px]:mt-0 flex-1 flex flex-col justify-center gap-5 w-1/2 max-[768px]:w-full max-[768px]:py-2 sm:py-0 ">
+      <div className=" right mt-2 max-[768px]:-mt-40 flex-1 flex flex-col justify-center gap-5 w-1/2 max-[768px]:w-full max-[768px]:p-3 sm:p-2 ">
         <div className="info max-[768px]:pt-10 w-fit flex flex-col items-start justify-center gap-3 sm:gap-2">
           <h2
             data-aos="fade-up"
@@ -51,7 +55,8 @@ const Intro = () => {
           />
           <p
              data-aos="fade-up"
-            className=" text-md font-medium w-3/4 max-[768px]:w-full text-gray-600 max-[700px]:text-[.75rem]"
+            className=" text-md font-medium w-3/4 max-[768px]:w-full max-[700px]:text-[.75rem]"
+            style={{color:darkMode?"#fff":""}}
           >
             As an enthusiastic Front-End Developer, creating visually appealing and user-friendly websites.
           </p>

@@ -21,7 +21,7 @@ const WorkCard = () => {
             className="flex flex-col items-cen gap-3 sm:gap-3"
           >
             <POPUP className="img-content relative">
-              <div className="h-[250px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer rounded-md overflow-hidden sm:h-[220px] sm:w-[100%] sm:bg-cover mx-auto ">
+              <div className="h-[250px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer rounded-md overflow-hidden sm:h-[220px] sm:w-[100%] sm:bg-cover mx-auto sm:hover:max-[768px]:text-sm">
                 <img
                   loading="lazy"
                   src={data.img}
@@ -60,7 +60,7 @@ const WorkCard = () => {
                 </div>
               </div>
             </POPUP>
-            <p className="text-black text-center text-[1.1rem] sm:text-[1rem]  sm:text-lg  w-fit p- px-3 rounded-[5px] font-medium" style={{color:darkMode?"#788097":""}}>
+            <p className="text-black text-center text-[1.1rem] sm:text-[1rem]  sm:text-lg  w-fit p- px-3 rounded-[5px] font-medium" style={{color:darkMode?"#fff":""}}>
               {data.title}
             </p>
           </div>

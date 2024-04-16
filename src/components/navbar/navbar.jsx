@@ -139,7 +139,7 @@
                   setToggleMenu(false);
                 }}
               >
-                  <button className="button block ml-6 text-md">Contact</button>
+                  <button className="button block ml-6 text-md" style={{margin:'2rem', marginLeft:'2.5rem'}}>Contact</button>
                
               </Link>
             </ul>

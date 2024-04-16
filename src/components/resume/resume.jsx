@@ -7,7 +7,7 @@ const Resume = () => {
     const theme=useContext(ThemeContext);
     const darkMode=theme.state.darkMode;
   return (
-    <div id="Resume" className="container m-auto mt-16">
+    <div id="Resume" className="container m-auto mt-16 p-2">
         {/* heading */}
       <div data-aos="fade-up" className="relative mb-5">
         <h3 className=" text-3xl font-black text-gray-400 sm:text-2xl">
@@ -16,14 +16,14 @@ const Resume = () => {
         <span className="h-[1.1px] right-0 absolute w-[92%] bg-gray-300 block"></span>
       </div>
       <div data-aos="fade-up" className="left flex-1 w-full">
-        <p className=" text-gray-700 font-medium w-[100%]" style={{color:darkMode?"#FCA61F":''}}>
+        <p className=" text-gray-700 font-medium w-[100%] max-[768px]:mb-2" style={{color:darkMode?"#FCA61F":''}}>
           Here are my qualifications.
         </p>
       </div>
        <div className="right flex-1 flex items-center justify-center">
           <fieldset
             data-aos="zoom-in"
-            className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
+            className=" w-[80%] p-5 py-12 sm:py-10 sm:w-full sm:p-2"
           >
             <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-gray-200 rounded-3xl py-1 px-8 font-semibold text-xl text-black" style={{color:darkMode?"#fff":''}}>
               Education

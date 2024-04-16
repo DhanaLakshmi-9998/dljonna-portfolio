@@ -4,12 +4,12 @@ import { createContext, useReducer } from "react";
 
 // Create the context with an initial value
 const ThemeContext = createContext({
-  state: { darkMode: true },
+  state: { darkMode: false },
   dispatch: () => {}
 });
 
 // Define the initial state
-const initialState = { darkMode: false };
+const initialState = { darkMode: true };
 
 // Define the reducer function
 const themeReducer = (state, action) => {
