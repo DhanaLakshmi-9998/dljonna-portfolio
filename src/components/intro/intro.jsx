@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import ThemeContext from "../../context";
 import mine from '../../assets/img/banner1.jpg'
-import resumePDF from '../../assets/resume.pdf'
+import resumePDF from '../../assets/dljonnaresume.pdf'
 
 import {
   AiFillTwitterCircle,
